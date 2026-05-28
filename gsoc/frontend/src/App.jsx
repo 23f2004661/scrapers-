@@ -33,7 +33,7 @@ export default function App() {
 
   // Load organizations data
   useEffect(() => {
-    fetch('/data.json')
+    fetch('./data.json')
       .then(res => {
         if (!res.ok) {
           throw new Error('Failed to load GSoC organization data. Make sure data.json is in the public directory.');
